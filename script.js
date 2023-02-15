@@ -20,6 +20,8 @@ fetch('http://httpbin.org/post',{
     method: 'POST',
     body: fd,
 })
+.then(res => res.json())
+.then(data => console.log(data));
     
 })
 
