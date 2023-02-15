@@ -14,6 +14,13 @@ btn.addEventListener('click', () =>{
     fd.append('file'+ i, file);
 })
     
+     //upload file
+
+fetch('http://httpbin.org/post',{
+    method: 'POST',
+    body: fd,
+})
+    
 })
 
 
